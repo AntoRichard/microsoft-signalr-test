@@ -1,0 +1,335 @@
+@import "src/styles/variables";
+
+// Layout
+
+.ant-layout {
+  background-color: white;
+
+  .ant-layout-header {
+    padding: 0px !important;
+    background: $primary-color;
+    height: $nav-height;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+  }
+  .ant-layout-content {
+    margin-top: $nav-height;
+  }
+
+  .ant-layout-footer,
+  .ant-layout-content {
+    background-color: white;
+  }
+
+  .ant-layout-footer {
+    padding: 0px;
+  }
+}
+
+// Button
+
+.ant-btn {
+  background: black;
+  color: white;
+  border-color: black !important;
+
+  &:active,
+  &:hover,
+  &:focus {
+    background: black !important;
+    color: white !important;
+    border-color: black !important;
+  }
+}
+
+.ant-btn.ant-btn-ghost {
+  background-color: white;
+  border: 1px solid #cfd9e0;
+  border-radius: 4px;
+  height: 35px;
+  color: $label-color;
+  &:hover {
+    color: $label-color;
+  }
+}
+
+.ant-btn.ant-btn-dashed {
+  border: 1px solid $primary-color !important;
+  background: white !important;
+  color: $primary-color !important;
+}
+
+.ant-carousel {
+  .slick-slide {
+    div {
+      // margin: auto;
+    }
+  }
+
+  .slick-dots.slick-dots-bottom {
+    li {
+      width: 10px !important;
+    }
+    .slick-active {
+      button {
+        background-color: $primary-color !important;
+      }
+    }
+
+    button {
+      width: 8px;
+      height: 8px;
+      border-radius: 100%;
+      margin: 0px !important;
+      background-color: white !important;
+      opacity: 1 !important;
+    }
+  }
+}
+
+.slick-arrow.slick-prev {
+  background-color: red;
+  color: white;
+}
+.slick-arrow.slick-next {
+  background-color: red;
+  color: black;
+}
+
+// Tab
+.ant-tabs-tab {
+  font-size: 17px;
+  font-weight: lighter;
+  &:hover {
+    color: $primary-color;
+  }
+
+  &.ant-tabs-tab-active {
+    div {
+      color: $label-color !important;
+    }
+  }
+}
+
+.ant-tabs-ink-bar {
+  background-color: $primary-color !important;
+}
+// Button {
+
+.ant-btn.ant-btn-primary {
+  background: $primary-color !important;
+  border-color: $primary-color !important;
+  border-radius: 4px;
+  padding: 4px 24px !important;
+  height: 34px;
+
+  &.ant-btn-lg {
+    height: 40px !important;
+  }
+}
+
+// Input field
+
+.ant-input {
+  height: 34px;
+  border-radius: 4px;
+  border-color: white !important;
+  width: 250px;
+  font-size: 14px !important;
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: white !important;
+    box-shadow: unset !important;
+  }
+
+  &::placeholder {
+    color: #5f7d95;
+  }
+}
+
+.ant-input.primary-ant-input {
+  background: #f7f8fa;
+  border-color: #f7f8fa;
+  height: 36px;
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: #f7f8fa !important;
+  }
+}
+
+.ant-input-large {
+  height: 40px !important;
+}
+
+.add-item-input {
+  background: #eff3f6;
+  width: 115px;
+
+  .ant-input-wrapper {
+    border: 1px solid #cfd9e0;
+    border-radius: 4px;
+  }
+  .ant-input-group-addon {
+    background: #eff3f6;
+    border: none !important;
+  }
+  input {
+    background: #eff3f6;
+    width: 100% !important;
+    border-color: #eff3f6 !important;
+    text-align: center !important;
+    &:disabled {
+      color: $label-color;
+    }
+    &:hover {
+      border-color: #eff3f6 !important;
+    }
+  }
+}
+
+// Select
+.ant-select {
+  background: #eff3f6;
+  border: 1px solid #cfd9e0;
+  border-radius: 4px;
+  outline: none !important;
+  .ant-select-focused {
+    box-shadow: none !important;
+  }
+
+  .ant-select-selector {
+    background: #eff3f6 !important;
+    &:focus-visible {
+      outline: none !important;
+    }
+  }
+
+  &:hover {
+    .ant-select-selector {
+      border: none !important;
+    }
+  }
+}
+
+// Bread crums
+
+.ant-breadcrumb {
+  color: #9f9f9f !important;
+  cursor: pointer;
+}
+
+// Tags
+
+.ant-tag {
+  padding: 4px 14px;
+  border-radius: 18px;
+  color: $label-color;
+
+  &.ant-tag-success {
+    border-color: #239527;
+    background: #f7fff7;
+
+    .anticon.anticon-check-circle {
+      color: #239527;
+    }
+  }
+
+  &.ant-tag-red {
+    border-color: #cf2655;
+    background: #fff3f7;
+  }
+
+  *.ant-tag-yellow {
+    border-color: #ffb229;
+    background: #fff5e8;
+    font-weight: bold;
+  }
+  i {
+    font-size: 14px !important;
+    margin-right: 0.25rem;
+  }
+  img {
+    margin-right: 0.25rem;
+  }
+}
+
+// CK editor
+.ck.ck-editor__top.ck-reset_all {
+  display: none !important;
+}
+
+.ck-blurred.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline {
+  border: none !important;
+  padding: 0px !important;
+}
+
+// Checkbox
+.ant-checkbox {
+  .ant-checkbox-inner {
+    border: 1px solid #cdcfd1;
+    border-radius: 1px;
+    height: 18px;
+    width: 18px;
+    &:focus-visible {
+      border: 1px solid $primary-color !important;
+    }
+  }
+
+  &::after {
+    display: none !important;
+  }
+
+  &:hover, &:active, &:focus {
+    .ant-checkbox-inner {
+      border-color: $primary-color;
+    }
+  }
+}
+
+.ant-checkbox-checked {
+  .ant-checkbox-inner {
+    background-color: $primary-color;
+    border-color: $primary-color !important;
+  }
+}
+
+.checkbox-round {
+  .ant-checkbox-inner {
+    border-radius: 100%;
+  }
+}
+
+// Slider
+
+.ant-slide.ant-slider-with-marks {
+}
+.ant-slider-track {
+  background-color: rgba($color: $primary-color, $alpha: 0.8)  !important;
+}
+
+.ant-slider-handle {
+  border-color: $primary-color !important;
+}
+
+//  Badge
+
+.ant-badge-count {
+  background-color: black !important;
+  P {
+    color: white;
+  }
+}
+
+// Drawer
+
+.ant-drawer-close {
+  left: 12px;
+  top: 4px;
+  span {
+    font-size: 20px;
+    color: $label-color !important;
+  }
+}
